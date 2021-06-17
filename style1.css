@@ -1,0 +1,144 @@
+*{
+    background-color:rgb(27, 26, 26) ;
+}
+
+figure{margin:25px;}
+figcaption{text-align:center;}
+figcaption span{
+    display:block;
+    color:rgb(21, 243, 243);
+    font-size:18px;
+    background-color: black;
+}
+.name {
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.lifestyles {
+    display:flex;
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+.effects {
+    padding-left:15px;
+    padding-right:15px;
+	
+}
+.section-header{
+    align-items: center;
+    margin-left:400px;
+    color: rgb(28, 248, 102);
+    font-size: 50px;
+}
+
+#contact.contact{
+	flex-direction:column;
+	width:120px;
+	margin: 0 auto;
+}
+#contact .contact-items {
+	width: 1000px;
+    display:flex;
+    margin-left: 10px;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	background-image: url(covii.jpg);
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #1d6fbbcc;
+	transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #e60b0be3;
+}
+#contact .icon {
+	width: 290px;
+	background: white;
+	margin: 0 auto;
+	margin-bottom: 1px;
+    color:white;
+}
+/*#contact .image {
+	width: 70px;
+	margin: 0 auto;
+    display: flex;
+	margin-bottom: 10px;
+    color:white;
+}*/
+
+#contact .contact-item h4 {
+	font-size: 2.0rem;
+    display:flex;
+	background: transparent;
+	color:rgb(232, 230, 240);
+}
+#contact .contact-info{
+	background: transparent;
+}
+#contact .section-title {
+	font-size: 100px;
+    color:white;
+    margin-left:500px ;
+	line-height: 2rem;
+	font-weight: 500;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  .flip{
+	  display: flex;
+	  padding: 20px;
+	  margin-left: 40px;
+  }
+  
+  .flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	margin-left: 40px;
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back {
+	color: white;
+	background-image: url(covii.jpg);
+    transform: rotateY(180deg);
+
+  }
+  

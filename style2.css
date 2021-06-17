@@ -1,0 +1,175 @@
+html{
+	background-color:black;
+}
+h1{
+	color: rgb(43, 128, 226);
+	margin-left: 500px;
+}
+
+.container1{
+    position: relative;
+    width: 1400px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container1 .cont{
+    position: relative;
+    max-width:800px;
+    height: 250px;
+    width: 700px;
+    background:rgb(91, 212, 128);
+    padding: 5px 3px;
+    margin: 70px 100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 202px rgba(230, 42, 42, 0.6);
+
+}
+.container1 .cont:hover{
+    height: 420px;
+}
+.container1 .cont .imgbx {
+    position:relative;
+    width:100px;
+    height:150px;
+    top:-30px;
+    left:20px;
+    z-index:1;
+    box-shadow: 0 5px 50px rgba(148, 201, 64, 0.6);
+    filter: drop-shadow(6px 5px 6px rgb(29, 42, 184));
+}
+.container .cont .imgbox img{
+    max-width:50%;
+
+}
+.container1 .cont .content{
+    position: relative;
+    margin-top: -420px;
+    padding: 100px 15px;
+    text-align: center;
+    color:rgb(240, 231, 230);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+.container1 .cont:hover .content{
+    visibility: visible;
+    opacity:1;
+    margin-top: -40px;
+    transition-delay: 0.5s ease-in;
+}
+*{
+    margin:0;
+    padding:0;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background:rgb(92, 194, 117);
+    color: rgb(233, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    perspective: 1000px;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(transparent,transparent),url(covii.jpg);
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color:blue;
+
+}
+::placeholder{
+    color: cornsilk;
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: rgb(240, 231, 230);
+    cursor: pointer;
+}
+.submit-btn{
+    position: relative;
+}
+.submit-btn::after{
+    content: '\27a4';
+    color: rgb(71, 199, 118);
+    line-height: 32px;
+    font-size: 17px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(243, 234, 234);
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.card .btn{
+    margin-top: 70px;
+}
+.card a{
+    color: rgb(240, 231, 230);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+}
